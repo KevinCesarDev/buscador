@@ -1,0 +1,85 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212,#00297f);
+}
+
+.title{
+    color: aliceblue;;
+    font-size: 85px;
+    animation: fliptitle 2s;
+}
+
+.containerInput{
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    margin: 35px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+}
+.containerInput input{
+    background-color: transparent;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.containerInput input::placeholder{
+    color: aliceblue;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.35);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 375px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.erroMsg{
+    color: red;
+    font-size: 30px;
+}
+
+main h2{
+    margin: 5px 0px;
+    font-size: 30px;
+}
+
+main span{
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+
+@keyframes fliptitle {
+    from{
+        transform: rotateY(35deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
